@@ -11,5 +11,7 @@ export JENKINS_PORT=--httpPort=8090
 export JENKINS_AJPPORT=--ajp13Port=-1
 export JENKINS_COMMAND_LINE="$JAVA $JAVA_ARGS $JAVA_OPTS -jar $JENKINS_WAR $JENKINS_WEBROOT $JENKINS_PORT $JENKINS_AJPPORT $JENKINS_OPTS"
 
+/config/startup.sh
+
 # run jenkins
 /bin/sh -c 'eval $JENKINS_COMMAND_LINE'
